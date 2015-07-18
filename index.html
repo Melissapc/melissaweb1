@@ -34,20 +34,27 @@
      </div>
  <button onclick = "getInsult();">     
   
-     melissa</button>
+     click</button>
  <script>
     function getInsult() {
-        console.log("click");
         var insultElement = document.getElementById("insult-text");
         console.log(insultElement);
         insultElement.innerText="click!";
         var insultArray = [];
-        insultArray[0] = "you have a nice shirt";
-        insultArray[1] = "you have a big head";
-        insultArray[0] = "you're awesome";
-        insultArray[1] = "your dumb";
-        insultArray[0] = "your cool";
         
+        insultArray[0] = "you have a nice face";
+        insultArray[1] = "you have a big head";
+        insultArray[2] = "you're awesome";
+        insultArray[3] = "your dumb";
+        insultArray[4] = "your cool";
+        insultArray[5] = "your lame";
+        insultArray[6] = "your wierd";
+        
+        var n = Math.random();
+        n = Math.round((insultArray.length-1)*n);
+        console.log(insultArray[n])
+         insultElement.innerHTML=insultArray[n];
+    } 
         </script>
 </body>
 </html>
