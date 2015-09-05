@@ -31,17 +31,16 @@
   function randomname() {
         var nameElement = document.getElementById("name-text");
         console.log(nameElement);
-        var names = ["areli" , "Keily" , "gavin", "melissa", "casey" , "sophie" , "Mylee", "Vanessa" , "mike"];
+        var names = ["Keily" , "areli" , "gavin", "melissa", "casey" , "sophie" , "Mylee", "Vanessa" , "mike"];
  var lastnames = ["curiel","matson", "beach","crane", "campbell","barrientos", "gonzalez", "wazolzki", "nojek"];  
-        
-        var n = Math.random();
-        n = Math.round((names.length-1)*n);
-        console.log(names[n])
-         
-           
-        var m = Math.random();
-        m = Math.round((lastnames.length-1)*m);
-        console.log(lastnames[m])
+   
+      var n = Math.random();
+    n = Math.round((names.length-1)*n);
+      console.log(names[n])
+     
+ var m = Math.random();
+    m = Math.round((lastnames.length-1)*m);
+     console.log(lastnames[m])
      nameElement.innerHTML=names[n]+ " " + lastnames[m];
     } 
  
